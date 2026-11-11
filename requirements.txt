@@ -1,0 +1,8 @@
+discord.py[voice]>=2.4
+# Pinned: davey 0.2.0 needs an extra prepare_transition() call that discord.py 2.7.1 doesn't make,
+# so its encryption session never becomes ready and voice audio is silent. 0.1.7 works.
+# If a newer discord.py fixes this, this pin can be removed.
+davey==0.1.7
+python-dotenv>=1.0
+tzdata
+backports.zoneinfo; python_version < "3.9"
